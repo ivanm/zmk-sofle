@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '=', h: '$$mdi:apple-keyboard-control$$', s: +}
   - {t: '$$mdi:keyboard-tab$$', h: nav}
   - Q
   - W
@@ -42,7 +42,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:apple-keyboard-shift$$
   - Z
-  - {t: X, h: symbol}
+  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - C
   - V
   - B
@@ -50,19 +50,19 @@ layers:
   - N
   - M
   - {t: ',', s: <}
-  - {t: ., h: symbol}
+  - {t: ., h: '$$mdi:apple-keyboard-option$$'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '''', s: '"'}
+  - {t: '''', h: symbol, s: '"'}
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - {t: '$$mdi:backspace$$', type: backspace}
   - PLAY PAUSE
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-return$$', h: nav}
-  - {t: '-', s: _}
+  - {t: '-', h: symbol, s: _}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   nav:
@@ -172,7 +172,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - ^
   - {t: '-', s: _}
@@ -180,19 +180,19 @@ layers:
   - +
   - '&'
   - '|'
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   gaming:
