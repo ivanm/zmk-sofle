@@ -68,8 +68,8 @@ layers:
   nav:
   - RGB BRD
   - RGB BRI
+  - RGB TOG
   - '&bl BL_TOG'
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
