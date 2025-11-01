@@ -102,11 +102,11 @@
 
         symbol {
             bindings = <
-&trans    &kp F1             &kp F2          &kp F3                &kp F4                 &kp F5         &mmv MOVE_UP     &kp F6          &kp F7            &kp F8             &kp F9           &kp F10       &kp F11
-&trans    &kp RA(LS(SLASH))  &kp RA(LS(N1))  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT    &mmv MOVE_DOWN   &kp ASTERISK    &kp LESS_THAN     &kp GREATER_THAN   &kp EXCLAMATION  &kp QUESTION  &kp F12
-&kp CLCK  &kp AT_SIGN        &kp DOLLAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH       &mmv MOVE_LEFT   &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON        &kp EQUAL     &trans
-&trans    &trans             &trans          &kp TILDE             &kp CARET              &kp MINUS      &mmv MOVE_RIGHT  &kp PLUS        &kp AMPERSAND     &kp PIPE           &trans           &trans        &trans
-&trans    &trans             &trans          &trans                &trans                 &trans         &mkp LCLK        &trans          &trans            &trans             &trans           &trans
+&trans    &kp F1         &kp F2          &kp F3                &kp F4                 &kp F5         &mmv MOVE_UP     &kp F6          &kp F7            &kp F8             &kp F9           &kp F10       &kp F11
+&trans    &kp RA(SLASH)  &kp RA(LS(N1))  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT    &mmv MOVE_DOWN   &kp ASTERISK    &kp LESS_THAN     &kp GREATER_THAN   &kp EXCLAMATION  &kp QUESTION  &kp F12
+&kp CLCK  &kp AT_SIGN    &kp DOLLAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH       &mmv MOVE_LEFT   &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON        &kp EQUAL     &trans
+&trans    &trans         &trans          &kp TILDE             &kp CARET              &kp MINUS      &mmv MOVE_RIGHT  &kp PLUS        &kp AMPERSAND     &kp PIPE           &trans           &trans        &trans
+&trans    &trans         &trans          &trans                &trans                 &trans         &mkp LCLK        &trans          &trans            &trans             &trans           &trans
             >;
 
             display-name = "symbol";
