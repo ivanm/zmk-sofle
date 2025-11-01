@@ -81,7 +81,7 @@ layers:
   - F11
   - RGB EFR
   - RGB EFF
-  - $$mdi:mouse-left-click-outline$$
+  - INS
   - PgUp
   - $$mdi:arrow-up-bold$$
   - PgDn
@@ -94,7 +94,7 @@ layers:
   - '9'
   - RGB SPD
   - RGB SPI
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
