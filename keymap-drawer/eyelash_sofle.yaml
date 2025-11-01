@@ -66,7 +66,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   layer1:
-  - {t: '`', s: '~'}
+  - RGB TOG
   - F1
   - F2
   - F3
@@ -79,8 +79,8 @@ layers:
   - F9
   - F10
   - F11
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
+  - RGB EFR
+  - RGB EFF
   - $$mdi:mouse-left-click-outline$$
   - PgUp
   - $$mdi:arrow-up-bold$$
@@ -92,8 +92,8 @@ layers:
   - '7'
   - '8'
   - '9'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - RGB SPD
+  - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -105,8 +105,8 @@ layers:
   - '4'
   - '5'
   - '6'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
+  - RGB HUD
+  - RGB HUI
   - RGB ON
   - HOME
   - $$mdi:keyboard-space$$
