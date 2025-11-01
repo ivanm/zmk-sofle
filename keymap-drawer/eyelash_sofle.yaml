@@ -131,7 +131,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '0'
   symbol:
-  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -143,26 +143,26 @@ layers:
   - F8
   - F9
   - F10
+  - F11
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:bluetooth-off$$
-  - BT CLR ALL
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: AltGr+Sft+/, s: 'AltGr+Sft+?'}
+  - {t: AltGr+Sft+1, s: AltGr+Sft+!}
+  - '{'
+  - '}'
+  - '%'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '*'
   - <
   - '>'
   - '!'
   - '?'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
-  - OUT BLE
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
+  - CLCK
+  - '@'
+  - $
+  - (
+  - )
+  - '#'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - _
   - {t: '[', s: '{'}
@@ -171,11 +171,11 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
+  - ^
+  - {t: '-', s: _}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - +
   - '&'
