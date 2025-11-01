@@ -77,11 +77,11 @@
 
         nav {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3       &kp F4          &kp F5           &mmv MOVE_UP     &kp F6          &kp F7        &kp F8         &kp F9        &kp F10       &kp F11
-&trans      &kp GRAVE        &mkp LCLK       &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &mmv MOVE_DOWN   &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&trans      &kp TILDE        &trans          &kp LEFT     &kp DOWN_ARROW  &kp RIGHT        &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &kp HOME     &kp SPACE       &kp END          &mmv MOVE_RIGHT  &kp HOME        &kp SPACE     &kp END        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&kp C_MUTE  &trans           &trans          &trans       &trans          &trans           &mkp LCLK        &trans          &trans        &trans         &trans        &kp NUMBER_0
+&rgb_ug RGB_TOG  &kp F1           &kp F2          &kp F3       &kp F4          &kp F5           &mmv MOVE_UP     &kp F6          &kp F7        &kp F8         &kp F9        &kp F10       &kp F11
+&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &mkp LCLK       &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &mmv MOVE_DOWN   &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans          &kp LEFT     &kp DOWN_ARROW  &kp RIGHT        &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_ON  &kp HOME     &kp SPACE       &kp END          &mmv MOVE_RIGHT  &kp HOME        &kp SPACE     &kp END        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&kp C_MUTE       &trans           &trans          &trans       &trans          &trans           &mkp LCLK        &trans          &trans        &trans         &trans        &kp NUMBER_0
             >;
 
             display-name = "layer1";
