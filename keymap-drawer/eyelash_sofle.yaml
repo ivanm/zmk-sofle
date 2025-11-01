@@ -42,7 +42,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:apple-keyboard-shift$$
   - Z
-  - X
+  - {t: X, h: symbol}
   - C
   - V
   - B
@@ -50,7 +50,7 @@ layers:
   - N
   - M
   - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: ., h: symbol}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - PLAY PAUSE
   - $$mdi:backspace-reverse-outline$$
-  - {t: '-', h: nav, s: _}
+  - {t: '$$mdi:keyboard-return$$', h: nav}
   - {t: '-', s: _}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
@@ -151,12 +151,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '*'
+  - <
+  - '>'
+  - '!'
+  - '?'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F11
-  - F12
-  - _
-  - +
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -164,24 +164,24 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - _
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - ':'
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '{'
-  - '}'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - +
+  - '&'
+  - '|'
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - '&soft_off'
-  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
