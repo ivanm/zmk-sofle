@@ -78,15 +78,15 @@
 
         nav {
             bindings = <
-&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &bl BL_TOG  &trans       &trans          &trans           &mmv MOVE_UP     &bt BT_NXT      &bt BT_CLR_ALL  &trans         &trans        &trans        &tog 3
-&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp INS     &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &mmv MOVE_DOWN   &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans      &kp LEFT     &kp DOWN_ARROW  &kp RIGHT        &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN        &kp RIGHT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans      &kp HOME     &kp SPACE       &kp END          &mmv MOVE_RIGHT  &kp HOME        &kp SPACE       &kp END        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&kp C_MUTE       &trans           &trans      &trans       &trans          &trans           &mkp LCLK        &trans          &trans          &trans         &trans        &kp NUMBER_0
+&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &bl BL_TOG   &trans          &trans           &mmv MOVE_UP     &bt BT_NXT      &bt BT_CLR_ALL  &trans         &trans        &trans        &tog 3
+&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp INS          &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &mmv MOVE_DOWN   &kp PG_UP       &kp UP_ARROW    &kp PAGE_DOWN  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans           &kp LEFT     &kp DOWN_ARROW  &kp RIGHT        &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN        &kp RIGHT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans           &kp HOME     &kp SPACE       &kp END          &mmv MOVE_RIGHT  &kp HOME        &kp SPACE       &kp END        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&kp C_MUTE       &trans           &trans           &trans       &trans          &trans           &mkp LCLK        &trans          &trans          &trans         &trans        &kp NUMBER_0
             >;
 
             display-name = "nav";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
         };
 
         symbol {
