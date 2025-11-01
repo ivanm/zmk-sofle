@@ -40,7 +40,7 @@
     ltquicktap: ltquicktap {
         compatible = "zmk,behavior-hold-tap";
         label = "LTQUICKTAP";
-        bindings = <&lt>, <&kp>;
+        bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
         quick-tap-ms = <150>;
