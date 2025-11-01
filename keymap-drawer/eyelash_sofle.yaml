@@ -145,7 +145,7 @@ layers:
   - F10
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: AltGr+Sft+/, s: 'AltGr+Sft+?'}
+  - {t: AltGr+/, s: 'AltGr+?'}
   - {t: AltGr+Sft+1, s: AltGr+Sft+!}
   - '{'
   - '}'
