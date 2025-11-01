@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  layer0:
+  base:
   - PLAY PAUSE
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -61,11 +61,11 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - PLAY PAUSE
   - $$mdi:backspace-reverse-outline$$
-  - {t: '-', h: layer1, s: _}
+  - {t: '-', h: nav, s: _}
   - {t: '-', s: _}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
-  layer1:
+  nav:
   - RGB TOG
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '0'
-  layer2:
+  symbol:
   - '~'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer3:
+  gaming:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
