@@ -82,19 +82,19 @@ layers:
   - {t: RGB EFR, type: held}
   - RGB EFF
   - INS
-  - PgUp
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
-  - PgDn
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - PG UP
+  - {t: ., s: '>'}
   - $$mdi:arrow-up-bold$$
-  - PgDn
+  - '0'
   - '7'
   - '8'
   - '9'
   - RGB SPD
   - RGB SPI
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PgUp
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -107,7 +107,7 @@ layers:
   - '6'
   - RGB HUD
   - RGB HUI
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PgDn
   - HOME
   - $$mdi:keyboard-space$$
   - END
@@ -129,7 +129,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '0'
+  - {t: '$$mdi:transfer$$', type: trans}
   symbol:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
