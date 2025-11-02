@@ -80,7 +80,7 @@
 &ltquicktap 1 TAB                &kp Q         &kp W                    &kp E                       &kp R                &kp T            &kp C_VOLUME_DOWN  &kp Y       &kp U                &kp I                &kp O                         &kp P      &kp DOWN_ARROW
 &mtquicktap LEFT_CONTROL ESCAPE  &kp A         &kp S                    &kp D                       &kp F                &kp G            &kp C_PREV         &kp H       &kp J                &kp K                &kp L                         &kp SEMI   &kp LCTRL
 &kp LSHFT                        &kp Z         &mtquicktap RIGHT_ALT X  &kp C                       &kp V                &kp B            &kp C_NEXT         &kp N       &kp M                &kp COMMA            &mtquicktap RIGHT_ALT PERIOD  &kp FSLH   &mtquicktap LEFT_SHIFT BACKSLASH
-&kp C_MUTE                       &kp LEFT_GUI  &kp LEFT_ALT             &ltquicktap 2 SINGLE_QUOTE  &ltquicktap 1 SPACE  &kp BACKSPACE    &kp K_PLAY_PAUSE   &kp DELETE  &ltquicktap 1 ENTER  &ltquicktap 2 MINUS  &kp LEFT_ARROW                &kp RIGHT
+&kp C_MUTE                       &kp LEFT_GUI  &kp LEFT_ALT             &ltquicktap 2 SINGLE_QUOTE  &ltquicktap 1 SPACE  &kp BACKSPACE    &kp C_PP           &kp DELETE  &ltquicktap 1 ENTER  &ltquicktap 2 MINUS  &kp LEFT_ARROW                &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -102,9 +102,9 @@
 
         symbol {
             bindings = <
-&trans    &kp F1         &kp F2          &kp F3                &kp F4                 &kp F5         &mmv MOVE_UP     &kp F6          &kp F7            &kp F8             &kp F9           &kp F10       &kp F11
+&kp CAPS  &kp F1         &kp F2          &kp F3                &kp F4                 &kp F5         &mmv MOVE_UP     &kp F6          &kp F7            &kp F8             &kp F9           &kp F10       &kp F11
 &trans    &kp RA(SLASH)  &kp RA(LS(N1))  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT    &mmv MOVE_DOWN   &kp ASTERISK    &kp LESS_THAN     &kp GREATER_THAN   &kp EXCLAMATION  &kp QUESTION  &kp F12
-&kp CLCK  &kp AT_SIGN    &kp DOLLAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH       &mmv MOVE_LEFT   &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON        &kp EQUAL     &trans
+&trans    &kp AT_SIGN    &kp DOLLAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH       &mmv MOVE_LEFT   &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON        &kp EQUAL     &trans
 &trans    &trans         &trans          &kp TILDE             &kp CARET              &kp MINUS      &mmv MOVE_RIGHT  &kp PLUS        &kp AMPERSAND     &kp PIPE           &trans           &trans        &trans
 &trans    &trans         &trans          &trans                &trans                 &trans         &mkp LCLK        &trans          &trans            &trans             &trans           &trans
             >;
