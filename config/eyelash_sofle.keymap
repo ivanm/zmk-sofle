@@ -96,15 +96,15 @@
 
         nav {
             bindings = <
-&rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans          &trans       &mmv MOVE_UP     &bt BT_NXT      &bt BT_CLR_ALL  &trans        &trans        &trans        &trans
+&trans           &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans          &trans       &mmv MOVE_UP     &bt BT_NXT      &bt BT_CLR_ALL  &trans        &trans        &trans        &trans
 &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp INS          &trans           &kp UP_ARROW    &trans       &mmv MOVE_DOWN   &kp DOT         &kp UP_ARROW    &kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
 &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp PAGE_UP      &kp LEFT         &kp DOWN_ARROW  &kp RIGHT    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN        &kp RIGHT     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp PAGE_DOWN    &kp HOME         &kp ENTER       &kp END      &mmv MOVE_RIGHT  &kp HOME        &kp ENTER       &kp END       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&kp C_MUTE       &tog 3           &trans           &trans           &trans          &trans       &mkp LCLK        &trans          &trans          &trans        &trans        &trans
+&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp PAGE_DOWN    &kp HOME         &kp ENTER       &kp END      &mmv MOVE_RIGHT  &kp HOME        &kp SPACE       &kp END       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&rgb_ug RGB_TOG  &tog 3           &trans           &trans           &trans          &trans       &mkp LCLK        &trans          &trans          &trans        &trans        &trans
             >;
 
             display-name = "nav";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&scroll_underglow>;
         };
 
         symbol {
@@ -122,11 +122,11 @@
 
         gaming {
             bindings = <
-&kp M      &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
-&trans     &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
-&trans     &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
-&trans     &trans  &kp X   &trans            &trans     &trans           &trans  &trans  &trans  &trans  &kp PERIOD  &trans  &trans
-&kp ENTER  &trans  &trans  &kp SINGLE_QUOTE  &kp SPACE  &kp BACKSPACE    &trans  &trans  &trans  &trans  &trans      &trans
+&ltquicktap 1 M  &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
+&trans           &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
+&trans           &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
+&trans           &trans  &kp X   &trans            &trans     &trans           &trans  &trans  &trans  &trans  &kp PERIOD  &trans  &trans
+&kp ENTER        &trans  &trans  &kp SINGLE_QUOTE  &kp SPACE  &kp BACKSPACE    &trans  &trans  &trans  &trans  &trans      &trans
             >;
 
             display-name = "gaming";
