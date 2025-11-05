@@ -88,11 +88,11 @@
 
         gaming {
             bindings = <
-&trans     &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
-&trans     &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
-&trans     &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
-&trans     &trans  &kp X   &trans            &trans     &trans           &trans  &trans  &trans  &trans  &kp PERIOD  &trans  &trans
-&kp ENTER  &trans  &trans  &kp SINGLE_QUOTE  &kp SPACE  &kp BACKSPACE    &trans  &trans  &trans  &trans  &trans      &trans
+&ltquicktap 2 M  &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
+&trans           &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
+&trans           &trans  &trans  &trans            &trans     &trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans
+&trans           &trans  &kp X   &trans            &trans     &trans           &trans  &trans  &trans  &trans  &kp PERIOD  &trans  &trans
+&kp ENTER        &trans  &trans  &kp SINGLE_QUOTE  &kp SPACE  &kp BACKSPACE    &trans  &trans  &trans  &trans  &trans      &trans
             >;
 
             display-name = "gaming";
