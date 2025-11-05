@@ -66,7 +66,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   nav:
-  - {t: RGB BRD, type: held}
+  - {type: held}
   - RGB TOG
   - RGB BRD
   - RGB BRI
@@ -113,12 +113,12 @@ layers:
   - END
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - HOME
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
   - END
   - '1'
   - '2'
   - '3'
-  - $$mdi:volume-off$$
+  - RGB TOG
   - {t: gaming, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   gaming:
-  - M
+  - {t: M, h: nav}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
