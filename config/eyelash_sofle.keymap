@@ -4,7 +4,6 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -59,6 +58,14 @@
         flavor = "tap-preferred";
     };
 
+    scroll_underglow: scroll_underglow {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "SCROLL_UNDERGLOW";
+        #sensor-binding-cells = <0>;
+        tap-ms = <100>;
+        bindings = <&rgb_ug RGB_BRD>, <&rgb_ug RGB_BRI>;
+    };
+
     behaviors {
     };
 
@@ -76,28 +83,28 @@
 
         base {
             bindings = <
-&kp GRAVE                        &kp N1        &kp N2                   &kp N3                      &kp N4               &kp N5           &kp C_VOLUME_UP    &kp N6      &kp N7               &kp N8               &kp N9                        &kp N0     &kp UP_ARROW
-&ltquicktap 1 TAB                &kp Q         &kp W                    &kp E                       &kp R                &kp T            &kp C_VOLUME_DOWN  &kp Y       &kp U                &kp I                &kp O                         &kp P      &kp DOWN_ARROW
+&ltquicktap 1 GRAVE              &kp N1        &kp N2                   &kp N3                      &kp N4               &kp N5           &kp C_VOLUME_UP    &kp N6      &kp N7               &kp N8               &kp N9                        &kp N0     &kp UP_ARROW
+&kp TAB                          &kp Q         &kp W                    &kp E                       &kp R                &kp T            &kp C_VOLUME_DOWN  &kp Y       &kp U                &kp I                &kp O                         &kp P      &kp DOWN_ARROW
 &mtquicktap LEFT_CONTROL ESCAPE  &kp A         &kp S                    &kp D                       &kp F                &kp G            &kp C_PREV         &kp H       &kp J                &kp K                &kp L                         &kp SEMI   &mtquicktap LCTRL ENTER
 &kp LSHFT                        &kp Z         &mtquicktap RIGHT_ALT X  &kp C                       &kp V                &kp B            &kp C_NEXT         &kp N       &kp M                &kp COMMA            &mtquicktap RIGHT_ALT PERIOD  &kp FSLH   &mtquicktap LEFT_SHIFT BACKSLASH
 &kp C_MUTE                       &kp LEFT_GUI  &kp LEFT_ALT             &ltquicktap 2 SINGLE_QUOTE  &ltquicktap 1 SPACE  &kp BACKSPACE    &kp C_PP           &kp DELETE  &ltquicktap 1 ENTER  &ltquicktap 2 MINUS  &kp LEFT_ARROW                &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
             display-name = "base";
         };
 
         nav {
             bindings = <
-&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &bl BL_TOG  &trans          &trans       &mmv MOVE_UP     &bt BT_NXT      &bt BT_CLR_ALL  &trans        &trans        &trans        &tog 3
-&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp INS          &trans      &kp UP_ARROW    &trans       &mmv MOVE_DOWN   &kp DOT         &kp UP_ARROW    &kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp PAGE_UP      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN        &kp RIGHT     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp PAGE_DOWN    &kp HOME    &kp ENTER       &kp END      &mmv MOVE_RIGHT  &kp HOME        &kp ENTER       &kp END       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&kp C_MUTE       &trans           &trans           &trans      &trans          &trans       &mkp LCLK        &trans          &trans          &trans        &trans        &trans
+&rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans          &trans       &mmv MOVE_UP     &bt BT_NXT      &bt BT_CLR_ALL  &trans        &trans        &trans        &trans
+&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp INS          &trans           &kp UP_ARROW    &trans       &mmv MOVE_DOWN   &kp DOT         &kp UP_ARROW    &kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp PAGE_UP      &kp LEFT         &kp DOWN_ARROW  &kp RIGHT    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN        &kp RIGHT     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp PAGE_DOWN    &kp HOME         &kp ENTER       &kp END      &mmv MOVE_RIGHT  &kp HOME        &kp ENTER       &kp END       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&kp C_MUTE       &tog 3           &trans           &trans           &trans          &trans       &mkp LCLK        &trans          &trans          &trans        &trans        &trans
             >;
 
             display-name = "nav";
-            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         symbol {
