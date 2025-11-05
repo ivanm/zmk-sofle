@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   base:
-  - {t: '`', s: '~'}
+  - {t: '`', h: nav, s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:keyboard-tab$$', h: nav}
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -66,10 +66,10 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
   nav:
+  - {t: RGB BRD, type: held}
+  - RGB TOG
   - RGB BRD
   - RGB BRI
-  - RGB TOG
-  - '&bl BL_TOG'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -78,8 +78,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: gaming, h: toggle}
-  - {t: RGB EFR, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFR
   - RGB EFF
   - INS
   - {t: '$$mdi:transfer$$', type: trans}
@@ -119,7 +119,7 @@ layers:
   - '2'
   - '3'
   - $$mdi:volume-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: gaming, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
