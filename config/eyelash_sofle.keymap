@@ -64,7 +64,7 @@
         #sensor-binding-cells = <2>;
         bindings = <&rgb_ug>, <&rgb_ug>;
 
-        tap-ms = <10>;
+        tap-ms = <5>;
     };
 
     behaviors {
