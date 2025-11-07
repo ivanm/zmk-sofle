@@ -118,7 +118,7 @@
             >;
 
             display-name = "nav";
-            sensor-bindings = <&inc_dec_rgb RGB_BRI RGB_BRD>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         symbol {
