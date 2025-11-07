@@ -67,6 +67,15 @@
         tap-ms = <100>;
     };
 
+    inc_dec_fixed_rgb: inc_dec_fixed_rgb {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "INC_DEC_FIXED_RGB";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+
+        tap-ms = <100>;
+    };
+
     behaviors {
     };
 
@@ -75,7 +84,7 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <0 1 2>;
+            key-positions = <0 13>;
         };
     };
 
@@ -118,7 +127,7 @@
             >;
 
             display-name = "nav";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_fixed_rgb>;
         };
 
         symbol {
