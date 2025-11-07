@@ -58,13 +58,13 @@
         flavor = "tap-preferred";
     };
 
-    rotateBG: rotateBG {
+    inc_dec_rgb: inc_dec_rgb {
         compatible = "zmk,behavior-sensor-rotate-var";
-        label = "ROTATEBG";
+        label = "INC_DEC_RGB";
         #sensor-binding-cells = <2>;
         bindings = <&rgb_ug>, <&rgb_ug>;
 
-        tap-ms = <5>;
+        tap-ms = <100>;
     };
 
     behaviors {
@@ -91,7 +91,7 @@
 &kp C_MUTE                       &kp LEFT_GUI  &kp LEFT_ALT             &ltquicktap 3 SINGLE_QUOTE  &ltquicktap 2 SPACE  &kp BACKSPACE    &kp C_PP           &kp DELETE  &ltquicktap 2 ENTER  &ltquicktap 3 MINUS  &kp LEFT_ARROW                &kp RIGHT
             >;
 
-            sensor-bindings = <&rotateBG RGB_BRI RGB_BRD>;
+            sensor-bindings = <&none>;
             display-name = "base";
         };
 
@@ -118,7 +118,7 @@
             >;
 
             display-name = "nav";
-            sensor-bindings = <&rotateBG RGB_BRI RGB_BRI>;
+            sensor-bindings = <&inc_dec_rgb RGB_BRI RGB_BRD>;
         };
 
         symbol {
