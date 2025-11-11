@@ -146,7 +146,7 @@ layers:
   - PLAY PAUSE
   - RGB EFR
   - RGB EFF
-  - INS
+  - '&bl BL_TOG'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
