@@ -146,8 +146,8 @@ layers:
   - PLAY PAUSE
   - RGB EFR
   - RGB EFF
-  - '&bl BL_OFF'
-  - '&bl BL_ON'
+  - '&bl BL_TOG'
+  - RGB COLOR HSB(0,0,100)
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
