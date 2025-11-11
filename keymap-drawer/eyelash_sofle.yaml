@@ -147,7 +147,7 @@ layers:
   - RGB EFR
   - RGB EFF
   - '&bl BL_TOG'
-  - RGB COLOR HSB(0,0,100)
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
