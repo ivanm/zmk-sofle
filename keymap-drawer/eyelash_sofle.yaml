@@ -147,13 +147,13 @@ layers:
   - RGB EFR
   - RGB EFF
   - '&bl BL_TOG'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: ., s: '>'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-up-bold$$
-  - '0'
+  - $$mdi:backspace-reverse-outline$$
   - '7'
   - '8'
   - '9'
