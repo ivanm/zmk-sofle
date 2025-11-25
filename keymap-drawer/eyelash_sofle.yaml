@@ -185,8 +185,8 @@ layers:
   - '3'
   - RGB TOG
   - {t: gaming, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB SAD
+  - RGB SAI
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
