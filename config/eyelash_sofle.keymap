@@ -94,11 +94,11 @@
 
         base {
             bindings = <
-&ltquicktap 2 GRAVE              &kp N1        &kp N2                   &kp N3                      &kp N4               &kp N5           &kp C_VOLUME_UP    &kp N6      &kp N7               &kp N8               &kp N9                        &kp N0     &kp UP_ARROW
-&kp TAB                          &kp Q         &kp W                    &kp E                       &kp R                &kp T            &kp C_VOLUME_DOWN  &kp Y       &kp U                &kp I                &kp O                         &kp P      &kp DOWN_ARROW
-&mtquicktap LEFT_CONTROL ESCAPE  &kp A         &kp S                    &kp D                       &kp F                &kp G            &kp C_PREV         &kp H       &kp J                &kp K                &kp L                         &kp SEMI   &mtquicktap LCTRL ENTER
-&kp LSHFT                        &kp Z         &mtquicktap RIGHT_ALT X  &kp C                       &kp V                &kp B            &kp C_NEXT         &kp N       &kp M                &kp COMMA            &mtquicktap RIGHT_ALT PERIOD  &kp FSLH   &mtquicktap LEFT_SHIFT BACKSLASH
-&kp C_MUTE                       &kp LEFT_GUI  &kp LEFT_ALT             &ltquicktap 3 SINGLE_QUOTE  &ltquicktap 2 SPACE  &kp BACKSPACE    &kp C_PP           &kp DELETE  &ltquicktap 2 ENTER  &ltquicktap 3 MINUS  &kp LEFT_ARROW                &kp RIGHT
+&ltquicktap 2 GRAVE              &kp N1        &kp N2                   &kp N3                      &kp N4               &kp N5                            &kp C_VOLUME_UP    &kp N6                       &kp N7               &kp N8               &kp N9                        &kp N0     &kp UP_ARROW
+&kp TAB                          &kp Q         &kp W                    &kp E                       &kp R                &kp T                             &kp C_VOLUME_DOWN  &kp Y                        &kp U                &kp I                &kp O                         &kp P      &kp DOWN_ARROW
+&mtquicktap LEFT_CONTROL ESCAPE  &kp A         &kp S                    &kp D                       &kp F                &kp G                             &kp C_PREV         &kp H                        &kp J                &kp K                &kp L                         &kp SEMI   &mtquicktap LCTRL ENTER
+&kp LSHFT                        &kp Z         &mtquicktap RIGHT_ALT X  &kp C                       &kp V                &kp B                             &kp C_NEXT         &kp N                        &kp M                &kp COMMA            &mtquicktap RIGHT_ALT PERIOD  &kp FSLH   &mtquicktap LEFT_SHIFT BACKSLASH
+&kp C_MUTE                       &kp LEFT_GUI  &kp LEFT_ALT             &ltquicktap 3 SINGLE_QUOTE  &ltquicktap 2 SPACE  &mtquicktap LEFT_GUI BACKSPACE    &kp C_PP           &mtquicktap LEFT_ALT DELETE  &ltquicktap 2 ENTER  &ltquicktap 3 MINUS  &kp LEFT_ARROW                &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
